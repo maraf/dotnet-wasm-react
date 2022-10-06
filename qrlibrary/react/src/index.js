@@ -1,11 +1,9 @@
 import React, { useEffect, useState } from 'react'
-import styles from './styles.module.css'
 // import { generate } from '@dotnet/qr/main'
 
 export const ExampleComponent = ({ text }) => {
-  return <div className={styles.test}>XXX: {text}</div>
+  return <div>Example Component: {text}</div>
 }
-
 
 export const QrImage = ({ text }) => {
   const [imageSrc, setImageSrc] = useState(undefined);
