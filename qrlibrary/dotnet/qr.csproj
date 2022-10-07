@@ -5,8 +5,7 @@
     <WasmMainJSPath>main.js</WasmMainJSPath>
     <OutputType>Exe</OutputType>
     <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
-    <WasmAppDir>../react/public/qr</WasmAppDir>
-    <!-- <WasmAppDir>../src/qr</WasmAppDir> -->
+    <WasmAppDir>../react/dist/dotnet</WasmAppDir>
   </PropertyGroup>
 
   <ItemGroup>
