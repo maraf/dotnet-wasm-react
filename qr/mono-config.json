@@ -5,87 +5,87 @@
   "assets": [
     {
       "behavior": "assembly",
-      "name": "qr.dll"
+      "name": "dotnet-wasm-react/qr.dll"
     },
     {
       "behavior": "assembly",
-      "name": "qr.pdb"
+      "name": "dotnet-wasm-react/qr.pdb"
     },
     {
       "behavior": "assembly",
-      "name": "QRCoder.dll"
+      "name": "dotnet-wasm-react/QRCoder.dll"
     },
     {
       "behavior": "assembly",
-      "name": "System.Collections.Concurrent.dll"
+      "name": "dotnet-wasm-react/System.Collections.Concurrent.dll"
     },
     {
       "behavior": "assembly",
-      "name": "System.Collections.dll"
+      "name": "dotnet-wasm-react/System.Collections.dll"
     },
     {
       "behavior": "assembly",
-      "name": "System.Console.dll"
+      "name": "dotnet-wasm-react/System.Console.dll"
     },
     {
       "behavior": "assembly",
-      "name": "System.IO.Compression.dll"
+      "name": "dotnet-wasm-react/System.IO.Compression.dll"
     },
     {
       "behavior": "assembly",
-      "name": "System.Linq.dll"
+      "name": "dotnet-wasm-react/System.Linq.dll"
     },
     {
       "behavior": "assembly",
-      "name": "System.Private.CoreLib.dll"
+      "name": "dotnet-wasm-react/System.Private.CoreLib.dll"
     },
     {
       "behavior": "assembly",
-      "name": "System.Private.Uri.dll"
+      "name": "dotnet-wasm-react/System.Private.Uri.dll"
     },
     {
       "behavior": "assembly",
-      "name": "System.Runtime.dll"
+      "name": "dotnet-wasm-react/System.Runtime.dll"
     },
     {
       "behavior": "assembly",
-      "name": "System.Runtime.InteropServices.dll"
+      "name": "dotnet-wasm-react/System.Runtime.InteropServices.dll"
     },
     {
       "behavior": "assembly",
-      "name": "System.Runtime.InteropServices.JavaScript.dll"
+      "name": "dotnet-wasm-react/System.Runtime.InteropServices.JavaScript.dll"
     },
     {
       "behavior": "assembly",
-      "name": "System.Text.Encoding.CodePages.dll"
+      "name": "dotnet-wasm-react/System.Text.Encoding.CodePages.dll"
     },
     {
       "behavior": "assembly",
-      "name": "System.Text.RegularExpressions.dll"
+      "name": "dotnet-wasm-react/System.Text.RegularExpressions.dll"
     },
     {
       "virtualPath": "runtimeconfig.bin",
       "behavior": "vfs",
-      "name": "supportFiles/0_runtimeconfig.bin"
+      "name": "dotnet-wasm-react/supportFiles/0_runtimeconfig.bin"
     },
     {
       "virtualPath": "dotnet.js.symbols",
       "behavior": "vfs",
-      "name": "supportFiles/1_dotnet.js.symbols"
+      "name": "dotnet-wasm-react/supportFiles/1_dotnet.js.symbols"
     },
     {
       "loadRemote": false,
       "behavior": "icu",
-      "name": "icudt.dat"
+      "name": "dotnet-wasm-react/icudt.dat"
     },
     {
       "virtualPath": "/usr/share/zoneinfo/",
       "behavior": "vfs",
-      "name": "dotnet.timezones.blat"
+      "name": "dotnet-wasm-react/dotnet.timezones.blat"
     },
     {
       "behavior": "dotnetwasm",
-      "name": "dotnet.wasm"
+      "name": "dotnet-wasm-react/dotnet.wasm"
     }
   ],
   "remoteSources": [],
