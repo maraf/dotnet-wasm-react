@@ -9,7 +9,7 @@ async function createRuntimeAndGetExports() {
     const { getAssemblyExports, getConfig } = await dotnet
         .withModuleConfig({
             locateFile: (path, prefix) => {
-                return '/qr/' + path;
+                return '/dotnet-wasm-react/qr/' + path;
             }
         })
         .create();
