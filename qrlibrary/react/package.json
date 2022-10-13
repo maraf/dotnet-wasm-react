@@ -19,7 +19,7 @@
   "scripts": {
     "build": "microbundle-crl --no-compress --format modern,cjs",
     "start": "microbundle-crl watch --no-compress --format modern,cjs",
-    "postinstall": "mkdir %INIT_CWD%\\public\\qr && copy dist\\dotnet\\* %INIT_CWD%\\public\\qr\\*"
+    "postinstall": "xcopy dist\\dotnet %INIT_CWD%\\public\\qr /s /e /i"
   },
   "peerDependencies": {
     "react": ">=18.2.0",
