@@ -1,10 +1,10 @@
 import React, { useEffect, useState } from 'react'
-// import { generate } from '@dotnet/main'
 
 export const QrImage = ({ text }) => {
   const [imageSrc, setImageSrc] = useState(undefined);
   useEffect(() => {
     async function generateAsync() {
+      // Path in the target application public directory
       const mainJsPath = '/qr/main.js';
       const { generate } = await import(/* webpackIgnore: true */mainJsPath);
 
