@@ -9,7 +9,6 @@
   "module": "./dist/index.modern.js",
   "source": "src/index.js",
   "exports": {
-    "require": "./dist/index.js",
     "import": "./dist/index.modern.js",
     "default": "./dist/index.modern.js"
   },
@@ -17,8 +16,8 @@
     "node": ">=10"
   },
   "scripts": {
-    "build": "microbundle-crl --no-compress --format modern,cjs",
-    "start": "microbundle-crl watch --no-compress --format modern,cjs",
+    "build": "microbundle-crl --no-compress --format modern",
+    "start": "microbundle-crl watch --no-compress --format modern",
     "postinstall": "xcopy dist\\dotnet %INIT_CWD%\\public\\qr /s /e /i"
   },
   "peerDependencies": {
