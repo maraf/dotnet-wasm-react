@@ -1,12 +1,12 @@
 {
   "files": {
-    "main.js": "/dotnet-wasm-react/static/js/main.2042be7a.js",
-    "static/js/787.5a69b572.chunk.js": "/dotnet-wasm-react/static/js/787.5a69b572.chunk.js",
-    "index.html": "/dotnet-wasm-react/index.html",
-    "main.2042be7a.js.map": "/dotnet-wasm-react/static/js/main.2042be7a.js.map",
-    "787.5a69b572.chunk.js.map": "/dotnet-wasm-react/static/js/787.5a69b572.chunk.js.map"
+    "main.js": "/static/js/main.b9df5874.js",
+    "static/js/787.5a69b572.chunk.js": "/static/js/787.5a69b572.chunk.js",
+    "index.html": "/index.html",
+    "main.b9df5874.js.map": "/static/js/main.b9df5874.js.map",
+    "787.5a69b572.chunk.js.map": "/static/js/787.5a69b572.chunk.js.map"
   },
   "entrypoints": [
-    "static/js/main.2042be7a.js"
+    "static/js/main.b9df5874.js"
   ]
 }

@@ -65,6 +65,11 @@
       "name": "supportFiles/0_runtimeconfig.bin"
     },
     {
+      "virtualPath": "dotnet.js.symbols",
+      "behavior": "vfs",
+      "name": "supportFiles/1_dotnet.js.symbols"
+    },
+    {
       "loadRemote": false,
       "behavior": "icu",
       "name": "icudt.dat"
