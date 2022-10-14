@@ -5,7 +5,7 @@ import pkg from '../package.json';
 
 function App() {
   const [text, setText] = useState("Hello from react!");
-  const debouncedSetText = useCallback(() => debounce(setText, 2000)(), []);
+  const debouncedSetText = useCallback(debounce(setText, 2000), []);
 
   const basePath = pkg.homepage 
     ? new URL(pkg.homepage).pathname
