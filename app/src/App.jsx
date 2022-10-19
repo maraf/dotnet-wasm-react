@@ -8,14 +8,18 @@ function App() {
 
   return (
     <>
-      <div>
+      <h1>.NET on wasm in a react component</h1>
+      <p>
         Generate a QR from text: 
         <br />
         <input type="text" placeholder="Hello from react!" onChange={e => debouncedSetText(e.target.value)} />
-      </div>
-      <div>
+      </p>
+      <p>
         <QrImage text={text} relativePath="../../" />
-      </div>
+      </p>
+      <p>
+        Code at: <a href="https://github.com/maraf/dotnet-wasm-react">https://github.com/maraf/dotnet-wasm-react</a>
+      </p>
     </>
   );
 }
