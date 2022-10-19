@@ -4,7 +4,7 @@ import debounce from 'lodash.debounce';
 
 function App() {
   const [text, setText] = useState("Hello from react!");
-  const debouncedSetText = useCallback(debounce(setText, 2000), []);
+  const debouncedSetText = useCallback(debounce(setText, 100), []);
 
   return (
     <>
