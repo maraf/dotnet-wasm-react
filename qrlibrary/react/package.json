@@ -1,0 +1,58 @@
+{
+  "name": "sample-qr-library",
+  "version": "1.0.0",
+  "description": ".NET on WASM inside of a react component",
+  "author": "maraf",
+  "license": "MIT",
+  "repository": "maraf/dotnet-react-sample",
+  "main": "./dist/index.js",
+  "module": "./dist/index.webpack.js",
+  "source": "./src/index.js",
+  "exports": {
+    "import": "./dist/index.webpack.js",
+    "default": "./dist/index.webpack.js"
+  },
+  "engines": {
+    "node": ">=10"
+  },
+  "scripts": {
+    "build:dotnet": "dotnet publish -c Release -p:RunAOTCompilation=true ../dotnet/qr.csproj",
+    "build": "webpack",
+    "start": "webpack watch",
+    "postinstall": "rmdir %INIT_CWD%\\public\\qr /s /q & xcopy dist\\dotnet %INIT_CWD%\\public\\qr /s /e /i"
+  },
+  "peerDependencies": {
+    "react": ">=18.2.0",
+    "react-app-rewired": ">=2.2.1",
+    "react-dom": ">=18.2.0",
+    "react-scripts": ">=5.0.1"
+  },
+  "devDependencies": {
+    "babel-eslint": "^10.0.3",
+    "copy-webpack-plugin": "^11.0.0",
+    "cross-env": "^7.0.2",
+    "eslint": "^6.8.0",
+    "eslint-config-prettier": "^6.7.0",
+    "eslint-config-standard": "^14.1.0",
+    "eslint-config-standard-react": "^9.2.0",
+    "eslint-plugin-import": "^2.18.2",
+    "eslint-plugin-node": "^11.0.0",
+    "eslint-plugin-prettier": "^3.1.1",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-react": "^7.17.0",
+    "eslint-plugin-standard": "^4.0.1",
+    "npm-run-all": "^4.1.5",
+    "prettier": "^2.0.4",
+    "webpack-cli": "^4.10.0"
+  },
+  "files": [
+    "dist"
+  ],
+  "dependencies": {
+    "@babel/core": "^7.19.3",
+    "@babel/preset-env": "^7.19.4",
+    "@babel/preset-react": "^7.18.6",
+    "babel-loader": "^8.2.5",
+    "dotnet": "file:dist/dotnet"
+  }
+}
