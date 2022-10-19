@@ -18,7 +18,10 @@ function App() {
         <QrImage text={text} />
       </p>
       <p>
-        Code at: <a href="https://github.com/maraf/dotnet-wasm-react">https://github.com/maraf/dotnet-wasm-react</a>
+        Code at <a href="https://github.com/maraf/dotnet-wasm-react">https://github.com/maraf/dotnet-wasm-react</a>
+      </p>
+      <p>
+        QR code generated using <a href="https://github.com/codebude/QRCoder">https://github.com/codebude/QRCoder</a>
       </p>
     </>
   );
