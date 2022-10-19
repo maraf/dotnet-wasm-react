@@ -6,7 +6,9 @@ export const QrImage = ({ text, relativePath }) => {
     async function generateAsync() {
       if (text) {
         // Path in the target application public directory
-        const mainJsPath = (relativePath ? relativePath : '/') + 'qr/main.js';
+        // Use a default provided by webpack, bundled javascript is in public/static/js
+        // and our .NET code is copied to public/qr
+        const mainJsPath = (relativePath ? relativePath : '../../') + 'qr/main.js';
         const { generate } = await import(/* webpackIgnore: true */mainJsPath);
 
         var image = await generate(text, 10);

@@ -15,7 +15,7 @@ function App() {
         <input type="text" placeholder="Hello from react!" onChange={e => debouncedSetText(e.target.value)} />
       </p>
       <p>
-        <QrImage text={text} relativePath="../../" />
+        <QrImage text={text} />
       </p>
       <p>
         Code at: <a href="https://github.com/maraf/dotnet-wasm-react">https://github.com/maraf/dotnet-wasm-react</a>
