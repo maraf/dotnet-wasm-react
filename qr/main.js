@@ -5,26 +5,15 @@ import { dotnet } from './dotnet.js'
 
 let exportsPromise = null;
 
-async function createRuntimeAndGetExports(options) {
-    const { getAssemblyExports, getConfig } = await dotnet
-        .withModuleConfig({
-            locateFile: (path, prefix) => {
-                let basePath = '/qr/';
-                if (options && options.basePath)
-                    basePath = options.basePath + basePath;
-
-                return basePath + path;
-            }
-        })
-        .create();
-
+async function createRuntimeAndGetExports() {
+    const { getAssemblyExports, getConfig } = await dotnet.create();
     const config = getConfig();
     return await getAssemblyExports(config.mainAssemblyName);
 }
 
-export async function generate(text, pixelsPerBlock, options) {
+export async function generate(text, pixelsPerBlock) {
     if (!exportsPromise) {
-        exportsPromise = createRuntimeAndGetExports(options);
+        exportsPromise = createRuntimeAndGetExports();
     }
 
     const exports = await exportsPromise;
