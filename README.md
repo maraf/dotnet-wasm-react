@@ -7,7 +7,7 @@ This sample shows how to use .NET on WASM integrated into a react application. I
 - **app**: target react application using `react-scripts`
 - **qrlibrary**: npm library implementing QR generation
   - **dotnet**: .NET implementation of QR generator
-  - **react**: webpack bundled ract component for showing a QR code image
+  - **react**: webpack bundled react component for showing a QR code image
 
 ## Live demo
 
