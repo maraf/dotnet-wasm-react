@@ -17,6 +17,7 @@
   },
   "scripts": {
     "build:dotnet": "dotnet publish -c Release -p:RunAOTCompilation=true ../dotnet/qr.csproj",
+    "build:dotnet:debug": "dotnet publish -c Debug ../dotnet/qr.csproj",
     "build": "webpack",
     "start": "webpack watch",
     "postinstall": "rmdir %INIT_CWD%\\public\\qr /s /q & xcopy dist\\dotnet %INIT_CWD%\\public\\qr /s /e /i"
