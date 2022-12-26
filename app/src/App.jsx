@@ -4,7 +4,7 @@ import debounce from 'lodash.debounce';
 
 function App() {
   const [text, setText] = useState("Hello from react!");
-  const debouncedSetText = useCallback(debounce(setText, 100), []);
+  const debouncedSetText = useCallback(debounce(e => setText(e.target.value), 100), []);
 
   return (
     <>
@@ -12,7 +12,7 @@ function App() {
       <p>
         Generate a QR from text: 
         <br />
-        <input type="text" placeholder="Hello from react!" onChange={e => debouncedSetText(e.target.value)} />
+        <input type="text" placeholder="Hello from react!" onChange={debouncedSetText} />
       </p>
       <p>
         <QrImage text={text} />
