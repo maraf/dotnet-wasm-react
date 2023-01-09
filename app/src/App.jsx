@@ -1,10 +1,10 @@
 import { QrImage } from 'qrlibrary';
-import { useState, useCallback } from 'react';
+import { useState } from 'react';
 import debounce from 'lodash.debounce';
 
 function App() {
   const [text, setText] = useState("Hello from react!");
-  const debouncedSetText = useCallback(debounce(e => setText(e.target.value), 100), []);
+  const debouncedSetText = debounce(e => setText(e.target.value), 100);
 
   return (
     <>
