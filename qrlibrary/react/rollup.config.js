@@ -2,7 +2,6 @@ import nodeResolve from '@rollup/plugin-node-resolve';
 import commonjs from '@rollup/plugin-commonjs';
 import babel from '@rollup/plugin-babel';
 import replace from '@rollup/plugin-replace';
-import url from '@rollup/plugin-url';
 import files from 'rollup-plugin-import-file';
 
 export default {
@@ -39,11 +38,6 @@ export default {
       replace({
          preventAssignment: false,
          'process.env.NODE_ENV': '"production"'
-      }),
-      // url({
-      //   limit: Infinity, // Embed all files regardless of size
-      //   include: ['**/*.wasm', '**/*.dat'], // Include WASM and DAT files
-      //   emitFiles: false, // Don't emit files to output directory since we're embedding them
-      // }),
+      })
    ]
 }
