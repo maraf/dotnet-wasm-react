@@ -2,6 +2,9 @@
 
 This sample shows how to use .NET on WASM integrated into a React application. It goes one step further and extract the react component into a reusable package.
 
+- [Blazor Community Standup - Integrate .NET in JavaScript apps](https://www.youtube.com/watch?v=tAh899Gri4E)
+- [Blazor + React demo](https://github.com/maraf/blazor-wasm-react)
+
 ## Project structure
 
 - **app**: target React application using rollup to do the JavaScript build
