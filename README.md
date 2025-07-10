@@ -1,4 +1,4 @@
-# .NET on WASM in a react component
+# .NET on WASM in a React component
 
 This sample shows how to use .NET on WASM integrated into a React application. It goes one step further and extract the react component into a reusable package.
 
