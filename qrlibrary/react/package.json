@@ -15,7 +15,6 @@
     "scripts": {
         "build": "rollup -c -w",
         "build:dotnet": "dotnet publish -c Release -p:RunAOTCompilation=true ../dotnet/qr.csproj",
-        "build:dotnet:debug": "dotnet publish -c Debug ../dotnet/qr.csproj"
     },
     "keywords": [],
     "peerDependencies": {

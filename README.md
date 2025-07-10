@@ -18,12 +18,6 @@ https://maraf.github.io/dotnet-wasm-react/
 ### .NET part
 
 - Install .NET 10 SDK (preview7+)
-- Run `npm run build:dotnet:debug` in the `qrlibrary/react` folder
-
-If you want to produce an optimized AOT compilation, you need WASM workload for .NET SDK.
-This way the live demo is produced.
-
-- Install wasm-tools workload `dotnet workload install wasm-tools`
 - Run `npm run build:dotnet` in the `qrlibrary/react` folder
 
 ### React library
