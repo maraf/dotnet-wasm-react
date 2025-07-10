@@ -14,7 +14,7 @@
     },
     "scripts": {
         "build": "rollup -c -w",
-        "build:dotnet": "dotnet publish -c Release -p:RunAOTCompilation=true ../dotnet/qr.csproj",
+        "build:dotnet": "dotnet publish -c Release -p:RunAOTCompilation=true ../dotnet/qr.csproj"
     },
     "keywords": [],
     "peerDependencies": {
