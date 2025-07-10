@@ -1,16 +1,11 @@
-import React, { useEffect, useState } from 'react'
+import React from 'react';
+import { generate } from 'dotnet-qr';
 
 export const QrImage = ({ text, relativePath }) => {
-  const [imageSrc, setImageSrc] = useState(undefined);
-  useEffect(() => {
+  const [imageSrc, setImageSrc] = React.useState(undefined);
+  React.useEffect(() => {
     async function generateAsync() {
       if (text) {
-        // Path in the target application public directory
-        // Use a default provided by webpack, bundled javascript is in public/static/js
-        // and our .NET code is copied to public/qr
-        const mainJsPath = (relativePath ? relativePath : '../../') + 'qr/main.js';
-        const { generate } = await import(/* webpackIgnore: true */mainJsPath);
-
         var image = await generate(text, 10);
         setImageSrc("data:image/bmp;base64, " + image);
       } else {

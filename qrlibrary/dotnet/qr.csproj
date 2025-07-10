@@ -1,19 +1,19 @@
-<Project Sdk="Microsoft.NET.Sdk">
+<Project Sdk="Microsoft.NET.Sdk.WebAssembly">
+
   <PropertyGroup>
-    <TargetFramework>net7.0</TargetFramework>
-    <RuntimeIdentifier>browser-wasm</RuntimeIdentifier>
-    <WasmMainJSPath>main.js</WasmMainJSPath>
-    <OutputType>Exe</OutputType>
+    <TargetFramework>net10.0</TargetFramework>
+    <OutputType>Library</OutputType>
     <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
-    <WasmAppDir>../react/dist/dotnet</WasmAppDir>
   </PropertyGroup>
 
-  <ItemGroup>
-    <WasmExtraFilesToDeploy Include="main.js" />
-    <WasmExtraFilesToDeploy Include="package.json" />
-  </ItemGroup>
-	
+  <PropertyGroup>
+    <WasmBundlerFriendlyBootConfig>true</WasmBundlerFriendlyBootConfig>
+    <WasmFingerprintAssets>false</WasmFingerprintAssets>
+    <CompressionEnabled>false</CompressionEnabled>
+  </PropertyGroup>
+  
 	<ItemGroup>
-		<PackageReference Include="QRCoder" Version="1.4.3" />
+		<PackageReference Include="QRCoder" Version="1.6.0" />
 	</ItemGroup>
+
 </Project>
