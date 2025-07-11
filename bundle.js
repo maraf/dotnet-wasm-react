@@ -1120,6 +1120,12 @@ React.createElement("input",{type:"text",placeholder:"Hello from react!",onChang
 ),/*#__PURE__*/
 React.createElement("p",null,/*#__PURE__*/
 React.createElement(QrImage,{text:text})
+),/*#__PURE__*/
+React.createElement("p",null,"Code at ",/*#__PURE__*/
+React.createElement("a",{href:"https://github.com/maraf/dotnet-wasm-react"},"https://github.com/maraf/dotnet-wasm-react")
+),/*#__PURE__*/
+React.createElement("p",null,"QR code generated using ",/*#__PURE__*/
+React.createElement("a",{href:"https://github.com/codebude/QRCoder"},"https://github.com/codebude/QRCoder")
 )
 ));
 
